@@ -1,10 +1,15 @@
 package application;
 
+import services.FileService;
+
 import java.util.Scanner;
 
 public class Main {
     static void main() {
         Scanner scanner = new Scanner(System.in);
+        FileService fileService = new FileService();
+
+        fileService.initializeSystem();
 
         int option;
 
